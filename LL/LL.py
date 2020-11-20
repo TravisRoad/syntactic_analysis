@@ -32,10 +32,6 @@ F -> (E) | num
 """
 
 
-def hello():
-    print('hello')
-
-
 first_dict = {
     'E': ['(', 'num'],
     "E'": ['+', '-', r'\varepsilon'],
@@ -112,7 +108,7 @@ def output_result(input_lz: list, pre_analysis_format: dict):
     print('|' + '|'.join(output_lz) + '|')
     output_lz = [':---', '---:', ':---:']
     print('|' + '|'.join(output_lz) + '|')
-    while (True):
+    while True:
         output_lz.clear()
         output_lz.append(''.join(stack))
         output_lz.append(''.join(input_lz))
