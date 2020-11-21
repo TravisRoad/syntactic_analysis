@@ -13,7 +13,7 @@
 """
 
 
-def convert2list(filename:str):
+def convert2list(filename: str):
     with open(filename, "r") as f_lexical:
         lz = f_lexical.readlines()
         lz.pop(0)
