@@ -49,7 +49,7 @@ follow_dict = {
     'F': ['*', '/', '$', ')', '+', '-']
 }
 
-production_dict = [
+production_list = [
     {'E': ["T", "E'"]},
     {"E'": ["+", "T", "E'"]},
     {"E'": ["-", "T", "E'"]},
@@ -141,7 +141,7 @@ def output_result(input_lz: list, pre_analysis_format: dict):
 
 
 if __name__ == '__main__':
-    ret = build_format(first_dict, follow_dict, production_dict)
+    ret = build_format(first_dict, follow_dict, production_list)
     output_format(ret)
     print(" ")
     output_result(util.convert2list('../util/lexical.out'), ret)
